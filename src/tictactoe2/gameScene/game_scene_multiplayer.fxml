@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="shadowpane" fx:id="shadowpane" prefHeight="700.0" prefWidth="600.0" styleClass="background" stylesheets="@../css/stylesheets/beigeStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe2.gameScene.game_scene_multiplayerController">
+   <children>
+      <AnchorPane id="mainAnchorPaneGS" fx:id="mainAnchorPaneGS" layoutX="50.0" layoutY="50.0" prefHeight="600.0" prefWidth="500.0" styleClass="#mainAnchorPaneGS">
+         <children>
+            <AnchorPane id="topBarPane" fx:id="topBarPane" prefHeight="25.0" prefWidth="500.0" styleClass="#topBarPane">
+               <children>
+                  <HBox id="topBar" fx:id="topBar" alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="500.0">
+                     <children>
+                        <Button id="minimizeButtonGS" fx:id="minimizeButtonGS" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" stylesheets="@../css/stylesheets/beigeStylesheet.css">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button id="closeButtonGS" fx:id="closeButtonGS" contentDisplay="CENTER" layoutX="10.0" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="50.0" stylesheets="@../css/stylesheets/beigeStylesheet.css" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="board" fitHeight="500.0" fitWidth="480.0" layoutX="10.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../css/images/board.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button1" layoutX="53.0" layoutY="129.0" mnemonicParsing="false" onAction="#button1Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button2" layoutX="183.0" layoutY="129.0" mnemonicParsing="false" onAction="#button2Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button3" layoutX="313.0" layoutY="129.0" mnemonicParsing="false" onAction="#button3Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button4" layoutX="53.0" layoutY="258.0" mnemonicParsing="false" onAction="#button4Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button7" layoutX="53.0" layoutY="389.0" mnemonicParsing="false" onAction="#button7Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button5" layoutX="183.0" layoutY="258.0" mnemonicParsing="false" onAction="#button5Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button6" layoutX="313.0" layoutY="258.0" mnemonicParsing="false" onAction="#button6Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button8" layoutX="183.0" layoutY="389.0" mnemonicParsing="false" onAction="#button8Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="button9" layoutX="313.0" layoutY="389.0" mnemonicParsing="false" onAction="#button9Clicked" prefHeight="124.0" prefWidth="126.0" />
+            <Button fx:id="backGS" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="20.0" />
+            <Button fx:id="reset" layoutX="213.0" layoutY="545.0" mnemonicParsing="false" onAction="#reset" prefHeight="32.0" prefWidth="75.0" text="Reset" />
+            <Button fx:id="settings" layoutX="2.0" layoutY="560.0" maxHeight="32.0" maxWidth="40.0" minHeight="32.0" minWidth="40.0" mnemonicParsing="false" onAction="#slideIn" prefHeight="32.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fx:id="settingsImg" fitHeight="25.0" fitWidth="24.0" onMouseClicked="#slideIn" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../css/images/settingsiconblack.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane fx:id="settingsTab" layoutX="-250.0" prefHeight="600.0" prefWidth="250.0">
+               <children>
+                  <Slider fx:id="adjustSound" layoutX="55.0" layoutY="129.0" onDragDetected="#setVolume" onMouseClicked="#setVolume" />
+                  <MenuButton fx:id="pickStyle" layoutX="64.0" layoutY="204.0" minHeight="28.0" minWidth="123.0" mnemonicParsing="false" text="Choose Style">
+                     <items>
+                        <MenuItem fx:id="purple" mnemonicParsing="false" onAction="#menubuttonPurple" onMenuValidation="#menubuttonPurple" text="purple" />
+                        <MenuItem fx:id="dark" mnemonicParsing="false" onAction="#menubuttonDark" onMenuValidation="#menubuttonDark" text="dark" />
+                        <MenuItem fx:id="blue" mnemonicParsing="false" onAction="#menubuttonBlue" onMenuValidation="#menubuttonBlue" text="blue" />
+                        <MenuItem id="rose" fx:id="rose" mnemonicParsing="false" onAction="#menubuttonRose" onMenuValidation="#menubuttonRose" text="rose" />
+                        <MenuItem fx:id="beige" mnemonicParsing="false" onAction="#menubuttonBeige" onMenuValidation="#menubuttonBeige" text="beige" />
+                     </items>
+                  </MenuButton>
+                  <Button fx:id="closeSettings" layoutX="220.0" layoutY="2.0" mnemonicParsing="false" onAction="#slideOut">
+                     <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../css/images/clo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="soundOn" layoutX="193.0" layoutY="124.0" mnemonicParsing="false" onAction="#volumeMax">
+                     <graphic>
+                        <ImageView fx:id="loudSymbol" fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../css/images/volumeUp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="soundOff" layoutX="25.0" layoutY="124.0" mnemonicParsing="false" onAction="#volumeMute">
+                     <graphic>
+                        <ImageView fx:id="quietSymbol" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../css/images/volumeMuted.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane fx:id="toggleBase1" layoutX="125.0" layoutY="518.0" maxHeight="15.0" onMouseClicked="#toggleButton1" prefHeight="15.0" prefWidth="30.0" styleClass="toggle-base">
+                     <children>
+                        <Button fx:id="toggleCircle1" maxHeight="15.0" minHeight="15.0" mnemonicParsing="false" onAction="#toggleButton1" prefHeight="15.0" styleClass="toggle-circle" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="toggleBase2" layoutX="125.0" layoutY="546.0" maxHeight="15.0" onMouseClicked="#toggleButton2" prefHeight="15.0" prefWidth="30.0" styleClass="toggle-base">
+                     <children>
+                        <Button fx:id="toggleCircle2" maxHeight="15.0" minHeight="15.0" mnemonicParsing="false" onAction="#toggleButton2" prefHeight="15.0" styleClass="toggle-circle" />
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="90.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../css/images/musiciconblack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="90.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../css/images/soundiconblack.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="65.0" layoutY="82.0" prefHeight="25.0" prefWidth="120.0" style="-fx-background-radius: 4px; -fx-background-color: white;">
+                     <children>
+                        <Button fx:id="whichSound" layoutX="35.0" layoutY="1.0" maxHeight="20.0" minHeight="20.0" minWidth="50.0" mnemonicParsing="false" onAction="#musicOn" prefHeight="20.0" text="Music" />
+                        <Button fx:id="musicNext" layoutX="95.0" layoutY="3.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#nextSong" prefHeight="20.0" prefWidth="20.0" />
+                        <Button fx:id="musicBack" layoutX="5.0" layoutY="3.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#previousSong" prefHeight="20.0" prefWidth="20.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" layoutX="96.0" layoutY="64.0" prefHeight="50.0" prefWidth="300.0">
+               <children>
+                  <Text fx:id="playersTurn" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1's turn" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="91.6" layoutY="16.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="changePlayer1Name" mnemonicParsing="false" onAction="#changePlayer1NameAppear" prefHeight="17.0" prefWidth="26.0" />
+                              <Text fx:id="player1" onMouseClicked="#changePlayer1NameAppear" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1:" />
+                           </children>
+                        </HBox>
+                        <TextField fx:id="changePlayer1" maxHeight="23.0" maxWidth="100.0" minHeight="23.0" minWidth="100.0" onKeyPressed="#changePlayer1NameEnter" prefHeight="23.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children></VBox>
+            <VBox alignment="CENTER" layoutX="258.3" layoutY="16.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <HBox fx:id="" alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="changePlayer2Name" mnemonicParsing="false" onAction="#changePlayer2NameAppear" />
+                              <Text fx:id="player2" onMouseClicked="#changePlayer2NameAppear" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2:" />
+                           </children>
+                        </HBox>
+                        <TextField fx:id="changePlayer2" maxHeight="23.0" maxWidth="100.0" minHeight="23.0" minWidth="100.0" onKeyPressed="#changePlayer2NameEnter" prefHeight="23.0" prefWidth="100.0" />
+                     </children>
+                  </VBox>
+               </children></VBox>
+            <Text fx:id="warning" layoutX="-26.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name cannot be more than 11 characters long!" visible="false" x="120.0" />
+            <Pane fx:id="halfPane" layoutX="250.0" layoutY="25.0" onMouseClicked="#slideOut" prefHeight="575.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

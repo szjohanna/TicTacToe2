@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="shadowpanePopup" fx:id="shadowpanePopup" prefHeight="350.0" prefWidth="400.0" style="-fx-background-color: transparent;" styleClass="background" stylesheets="@../css/stylesheets/beigeStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe2.gameScene.popupController">
+   <children>
+      <AnchorPane id="mainAnchorPanePopup" fx:id="mainAnchorPanePopup" layoutX="100.0" layoutY="50.0" maxWidth="200.0" prefHeight="250.0" prefWidth="200.0" styleClass="#mainAnchorPane" stylesheets="@../css/stylesheets/beigeStylesheet.css">
+         <children>
+            <AnchorPane id="topBarPanePopup" fx:id="topBarPanePopup" prefHeight="25.0" prefWidth="200.0" styleClass="#topBarPane" stylesheets="@../css/stylesheets/beigeStylesheet.css">
+               <children>
+                  <HBox id="topBarPopup" fx:id="topBarPopup" alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        
+                          
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Text fx:id="mainTextPopup" layoutX="54.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It's a tie!" />
+            <Button fx:id="restartPopup" layoutX="70.0" layoutY="136.0" mnemonicParsing="false" onAction="#reset" text="Restart" />
+            <Button fx:id="exitGamePopup" layoutX="61.0" layoutY="192.0" mnemonicParsing="false" onAction="#exitGame" text="Exit game" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

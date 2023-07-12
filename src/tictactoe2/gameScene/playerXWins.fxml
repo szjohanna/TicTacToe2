@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="shadowpanePopup" fx:id="shadowpanePopup" prefHeight="350.0" prefWidth="401.0" styleClass="background" stylesheets="@../css/stylesheets/beigeStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe2.gameScene.popupControllerMultiplayer">
+   <children>
+      <AnchorPane id="mainAnchorPanePopup" fx:id="mainAnchorPanePopup" layoutX="50.0" layoutY="50.0" maxWidth="350.0" prefHeight="250.0" prefWidth="301.0" stylesheets="@../css/stylesheets/beigeStylesheet.css">
+         <children>
+            <AnchorPane id="topBarPanePopup" fx:id="topBarPanePopup" prefHeight="25.0" prefWidth="200.0" stylesheets="@../css/stylesheets/beigeStylesheet.css">
+               <children>
+                  <HBox id="topBarPopup" fx:id="topBarPopup" alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="301.0">
+                     <children>
+                        
+                          
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Button fx:id="restartPopup" layoutX="126.0" layoutY="136.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Button fx:id="exitGamePopup" layoutX="111.0" layoutY="187.0" mnemonicParsing="false" onAction="#exitGame" text="Exit game" />
+            <VBox fx:id="vBox" alignment="CENTER" layoutY="25.0" maxHeight="100.0" maxWidth="301.0" minHeight="100.0" minWidth="301.0" prefHeight="100.0" prefWidth="301.0">
+                <children>
+                    <Label fx:id="mainTextPopup" wrapText="true" />
+                </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

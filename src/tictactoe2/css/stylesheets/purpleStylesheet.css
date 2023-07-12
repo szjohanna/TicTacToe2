@@ -1,0 +1,550 @@
+
+.background {
+    -fx-background-color: white;
+}
+
+#minimizeButton {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-background-image: url("../images/min.png"); 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#closeButton {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-background-image: url("../images/clo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#minimizeButton:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/min_white.png");
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#closeButton:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close_white.png");
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#minimizeButtonGS {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-background-image: url("../images/min.png"); 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#closeButtonGS {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-background-image: url("../images/clo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#minimizeButtonGS:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/min_white.png");
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+#closeButtonGS:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close_white.png");
+    -fx-border-radius: 0%;
+    -fx-background-radius: 0.0em;
+}
+
+.anchorpane {
+    -fx-background-color: white;
+}
+
+#shadowpane {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, #00000066, 50, 0.5, 0.0, 0.0);
+}
+
+#topBar {
+     -fx-background-color: transparent;
+}
+
+#topBarPane {
+     -fx-background-color: transparent;
+}
+
+#mainAnchorPane {
+    -fx-background-color: white;
+    -fx-background-image: url("../images/purple.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+    -fx-alignment: TOP_RIGHT;
+}
+
+#mainAnchorPaneGS {
+    -fx-background-color: white;
+    -fx-background-image: url("../images/purple2.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+    -fx-alignment: TOP_RIGHT;
+}
+
+#mainText {
+    -fx-font-size: 28px;
+    -fx-font-family: "Century Gothic";
+    -fx-fill: black;
+    -fx-alignment: center;
+}
+
+#singleplayer, #multiplayer {
+  -fx-appearance: none;
+  -fx-background-color: #c88cd3;;
+  -fx-border: 2px;
+  -fx-border-color: #1A1A1A;
+  -fx-border-radius: 15px;
+  -fx-box-sizing: border-box;
+  -fx-color: #3B3B3B;
+  -fx-display: inline-block;
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-line-height: normal;
+  -fx-margin: 0;
+  -fx-min-height: 60px;
+  -fx-min-width: 0;
+  -fx-outline: none;
+  -fx-padding: 16px ; 
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-user-select: none;
+  -fx-touch-action: manipulation;
+  -fx-width: 100%;
+  -fx-will-change: transform;
+  -fx-background-radius: 15;
+  -fx-text-fill: black;
+  -fx-cursor: hand;
+}
+
+#singleplayer:hover, #multiplayer:hover {
+  -fx-background-color: #9b66b6;
+  -fx-background-radius: 15;
+  -fx-border-color: black;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 10, 0, 0, 7);
+  -fx-translate-y: -5;
+}
+
+#singleplayer:active {
+  -fx-border-radius: 50px;
+  -fx-translate-y: 0;
+}
+
+#settings {
+    -fx-cursor: hand;
+    -fx-background-color: transparent; 
+    -fx-graphic: url(../images/settingsiconblack.png);
+}
+
+#musicBack {
+  -fx-cursor: hand;
+  -fx-background-color: transparent; 
+  -fx-graphic: url(../images/arrowiconblackleft.png);
+}
+
+#musicNext {
+  -fx-cursor: hand;  
+  -fx-background-color: transparent; 
+  -fx-graphic: url(../images/arrowiconblack.png);
+}
+
+#musicBack:hover, #musicNext:hover {
+  -fx-box-shadow: #121212 0 0 0 3px, #171717 0 0 0 0;
+  -fx-effect: dropshadow(gaussian, transparent, 10, 0.5, 0, 0); 
+}
+
+#settingsTab {
+    -fx-background-color: #e5cbe9; 
+}
+
+#closeSettings {
+    -fx-background-color: transparent;
+}
+
+#closeSettings, #soundOn, #soundOff {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+}
+
+#whichSound {
+    -fx-cursor: hand;
+    -fx-font-family: "Century Gothic";
+    -fx-background-color: transparent;
+    -fx-font-size: 12px; 
+}
+
+#pickStyle {
+  -fx-mark-color: #121212;
+  -fx-align-items: center;
+  -fx-background-color: #fff;
+  -fx-border-radius: 5px;
+  -fx-cursor: default;
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 14px;
+  -fx-font-weight: 600;
+  -fx-justify-content: center;
+  -fx-line-height: 1;
+  -fx-margin: 0;
+  -fx-text-align: center;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0.5, 0, 0); 
+  -fx-border: 0;
+  -fx-user-select: none;
+  -fx-touch-action: manipulation;
+  -fx-background-radius: 5;
+  -fx-text-fill: black;
+}
+
+#pickStyle:hover {
+  -fx-box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  -fx-effect: dropshadow(gaussian, transparent, 10, 0.5, 0, 0); 
+  -fx-background-radius: 5;
+  -fx-border-color: white;
+  -fx-text-fill: black;
+}
+
+#adjustSound .track {
+    -fx-cursor: hand;
+    -fx-border-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border: none;
+    -fx-border-style: none;
+    -fx-background-color: white;
+}
+
+#adjustSound .increment-button,
+#adjustSound .decrement-button {
+    -fx-background-color: white;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 0.0 10.0 0.0;
+}
+
+#adjustSound .thumb {
+    -fx-cursor: hand;
+    -fx-background-insets: 1.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+    -fx-background-color: #000000;
+}
+
+#adjustSound .thumb:pressed {
+    -fx-background-color: #9c63b6;
+    -fx-background-insets: 1.5, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+#easy, #medium, #hard {
+  -fx-appearance: none;
+  -fx-background-color: #c88cd3;
+  -fx-border: 2px;
+  -fx-border-color: #1A1A1A;
+  -fx-border-radius: 15px;
+  -fx-box-sizing: border-box;
+  -fx-color: #3B3B3B;
+  -fx-display: inline-block;
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-line-height: normal;
+  -fx-margin: 0;
+  -fx-min-height: 10px;
+  -fx-min-width: 0;
+  -fx-outline: none;
+  -fx-padding: 16px ; 
+  -fx-text-align: center;
+  -fx-text-decoration: none;
+  -fx-user-select: none;
+  -fx-touch-action: manipulation;
+  -fx-width: 100%;
+  -fx-will-change: transform;
+  -fx-background-radius: 15;
+  -fx-text-fill: black;
+  -fx-cursor: hand;
+}
+
+#easy:hover, #medium:hover, #hard:hover {
+  -fx-background-color: #9b66b6;
+  -fx-background-radius: 15;
+  -fx-border-color: black;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 10, 0, 0, 7);
+  -fx-translate-y: -5;
+}
+
+#back {
+  -fx-background-color: transparent;
+  -fx-graphic: url(../images/arrowiconblackleftBack.png);
+}  
+
+#back:hover {
+   -fx-background-color: transparent;
+   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 10, 0, 0, 7);
+   -fx-graphic: url(../images/arrowiconwhiteleftBack.png);
+}
+
+#backGS {
+  -fx-cursor: hand;  
+  -fx-background-color: transparent;
+  -fx-graphic: url(../images/arrowiconblackleftBack.png);
+}
+#backGS:hover {
+   -fx-background-color: transparent;
+   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 10, 0, 0, 7);
+   -fx-graphic: url(../images/arrowiconwhiteleftBack.png);
+}
+
+#start, #reset {
+  -fx-cursor: hand;
+  -fx-align-items: center;
+  -fx-background-color: #fff;
+  -fx-border-radius: 12px;
+  -fx-color: #121212;
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 14px;
+  -fx-font-weight: 600;
+  -fx-justify-content: center;
+  -fx-line-height: 1;
+  -fx-margin: 0;
+  -fx-padding: 6px;
+  -fx-text-align: center;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0.5, 0, 0); 
+  -fx-border: 0;
+  -fx-user-select: none;
+  -fx-touch-action: manipulation;
+  -fx-background-radius: 15;
+  -fx-min-height: 20px;
+  -fx-min-width: 40px;
+  -fx-text-fill: black;
+}  
+
+#start:hover, #reset:hover {
+  -fx-box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  -fx-effect: dropshadow(gaussian, transparent, 10, 0.5, 0, 0); 
+  -fx-background-radius: 15;
+  -fx-border-color: white;
+  -fx-text-fill: black;
+}
+
+#button1, #button2, #button3, #button4, #button5, #button6, #button7, #button8, #button9 {
+    -fx-background-color: transparent;
+}
+
+#button1 .graphic {
+    visibility: hidden;
+}
+#button2 .graphic {
+    visibility: hidden;
+}
+#button3 .graphic {
+    visibility: hidden;
+}
+#button4 .graphic {
+    visibility: hidden;
+}
+#button5 .graphic {
+    visibility: hidden;
+}
+#button6 .graphic {
+    visibility: hidden;
+}
+#button7 .graphic {
+    visibility: hidden;
+}
+#button8 .graphic {
+    visibility: hidden;
+}
+#button9 .graphic {
+    visibility: hidden;
+}
+
+#player1, #player2, #player1points, #player2points {
+    -fx-cursor: hand;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 14px; 
+}
+
+#playersTurn {
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 20px; 
+    -fx-alignment: CENTER;
+}
+
+#changePlayer1Name, #changePlayer2Name {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, transparent, 10, 0.5, 0, 0); 
+    -fx-graphic: url(../images/penciliconblack.png);
+}
+
+#changePlayer1, #changePlayer2 {
+    -fx-cursor: hand;
+    -fx-background-radius: 2px;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+    -fx-border-color: #a06db9;
+    -fx-font-size: 11;
+    -fx-text-fill: #a06db9; 
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: #a06db9;
+}
+
+#shadowpanePopup {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, #00000066, 50, 0.5, 0.0, 0.0);
+}
+
+#topBarPopup {
+     -fx-background-color: transparent;
+}
+
+#topBarPanePopup {
+     -fx-background-color: transparent;
+}
+
+#mainAnchorPanePopup {
+    -fx-background-color: #dab1e2;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+    -fx-alignment: TOP_RIGHT;
+}
+
+#mainTextPopup {
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 24px;
+    -fx-alignment: center;
+}
+
+#restartPopup, #exitGamePopup {
+  -fx-align-items: center;
+  -fx-background-color: #fff;
+  -fx-border-radius: 12px;
+  -fx-color: #121212;
+  -fx-cursor: default;
+  -fx-font-family: "Century Gothic";
+  -fx-font-size: 14px;
+  -fx-font-weight: 600;
+  -fx-justify-content: center;
+  -fx-line-height: 1;
+  -fx-margin: 0;
+  -fx-padding: 6px;
+  -fx-text-align: center;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0.5, 0, 0); 
+  -fx-border: 0;
+  -fx-user-select: none;
+  -fx-touch-action: manipulation;
+  -fx-background-radius: 15;
+  -fx-min-height: 20px;
+  -fx-min-width: 40px;
+  -fx-text-fill: black;
+}
+
+#restartPopup:hover, #exitGamePopup:hover {
+  -fx-box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  -fx-effect: dropshadow(gaussian, transparent, 10, 0.5, 0, 0); 
+  -fx-background-radius: 15;
+  -fx-border-color: white;
+  -fx-text-fill: black;
+}
+
+#pickStyle {
+    -fx-cursor: hand;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-background-color: white;
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+    -fx-mark-color: black;
+    -fx-my-menu-font-color: black;       
+}
+
+#pickStyle:hover {
+    -fx-text-fill: #9c63b6; 
+    -fx-mark-color: #9c63b6;
+}
+.menu-button .label {
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+}
+.menu-item {
+    -fx-cursor: hand;
+    -fx-padding: 0.25em 0.25em 0.25em 0.25em;
+    -fx-pref-height: 27px;
+    -fx-text-fill: #9c63b6;
+    -fx-background: white; 
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+.menu-item .label{
+    -fx-font-size: 15;
+    -fx-text-fill: black;
+}
+.menu-item .label:hover{
+    -fx-font-size: 15;
+    -fx-text-fill: #9c63b6;
+}
+.menu-button .label:hover{
+    -fx-font-size: 15;
+    -fx-text-fill: #9c63b6;
+}
+.context-menu {
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+#beige {
+    -fx-background: #ebe5db;
+}
+#purple {
+    -fx-background: #dab1e2;
+}
+#dark {
+    -fx-background: #484848;
+    -fx-text-fill: white;
+}
+#blue {
+    -fx-background: #8fb3d8;
+}
+#rose {
+    -fx-background: #f7caca;
+}
+
+#warning {
+    -fx-font-size: 14px;
+    -fx-font-family: "Century Gothic";
+    -fx-fill: #f44336;
+    -fx-alignment: center;
+}
+
+#toggleBase1, #toggleBase2 {
+    -fx-cursor: hand;
+}
