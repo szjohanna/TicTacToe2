@@ -11,27 +11,28 @@ The executable jar file is located in the /dist directory.
 
 ### Choosing game mode:
 
-![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/05f48dd7-2139-4d43-b48d-d4ad7d7b1c88)
+![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/94986258-2c66-43e3-b1e8-c52d7552f727)
 
 
 ### Choosing difficulty:
 
-![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/786868c5-213d-4fe9-8197-5c311a4aeb4a)
+![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/fd2afb48-12e8-4d3c-a18f-0a9915145fe7)
 
 
 ### Singleplayer:
 
-![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/31131680-aaa8-4c79-b1b4-e963caa25395)
+![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/39ad8676-14b2-4024-b706-121298573c25)
 
 
 ### Multiplayer:
 
-![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/330c0889-1a12-455f-adb6-4e224456239d)
+![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/8f110738-aef1-4c41-a83c-72ab37c3f66d)
 
 
 ### Preview of settings:
 
-![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/dec58ac2-12b0-48f2-a455-6ff7566ad3ea)
+![image](https://github.com/szjohanna/TicTacToe2/assets/97356175/caf40f9d-0c1a-4376-9d00-b07da6890fe7)
+
 
 
 
