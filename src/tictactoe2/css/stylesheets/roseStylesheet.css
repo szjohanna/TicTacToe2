@@ -447,11 +447,11 @@
 
 
 #restartPopup, #exitGamePopup {
+  -fx-cursor: hand;  
   -fx-align-items: center;
   -fx-background-color: #fff;
   -fx-border-radius: 12px;
   -fx-color: #121212;
-  -fx-cursor: default;
   -fx-font-family: "Century Gothic";
   -fx-font-size: 14px;
   -fx-font-weight: 600;
