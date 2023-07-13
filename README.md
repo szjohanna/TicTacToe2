@@ -4,6 +4,10 @@ A game of TicTacToe with both singleplayer and multiplayer modes. In singleplaye
 Multiplayer mode allows custom player names, and counts the points of players. Settings lets players set music, sound effects, and change the overall style of the game.
 In summary, the program contains all functionality related to TicTacToe, while providing users with a chance to customize the game, and set it according to their preferences.
 
+### Running the program:
+
+The executable jar file is located in the /dist directory. 
+
 
 ### Choosing game mode:
 
